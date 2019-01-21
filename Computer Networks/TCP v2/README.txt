@@ -1,19 +1,16 @@
-CIS*3210 A2
-Name: Alex Lai (0920158)
-Partner: Luke Dembek-Blair (0929103)
 Email: alai02@uoguelph.ca & ldembekb@uoguelph.ca
-Port Number assigned: 12045
+Port Number: 12045
 
-description:
+Description:
     This program consists of 2 executables. A client that sends messages and a server that receives
     messages in the form of files. The server will save the messages sent into files in the server_files
     folder. The program is written in C and uses TCP protocols.
 
-compilation:
+Compilation:
     make all: creates 2 executables called server and client as well as a folder to store server files
     make clean: removes executables server and client as well as any files in server_files folder
 
-usage:
+Usage:
     ./server: will start the server on port 12045. No arguements required.
     To shutdown the server:
       Enter 2 while it is running:
