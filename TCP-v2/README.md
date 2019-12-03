@@ -1,17 +1,17 @@
-Email: alai02@uoguelph.ca & ldembekb@uoguelph.ca
-Port Number: 12045
+# TCP V2
 
-Description:
+## Description
     This program consists of 2 executables. A client that sends messages and a server that receives
     messages in the form of files. The server will save the messages sent into files in the server_files
     folder. The program is written in C and uses TCP protocols.
 
-Compilation:
+## Compilation
     make all: creates 2 executables called server and client as well as a folder to store server files
     make clean: removes executables server and client as well as any files in server_files folder
 
-Usage:
+## Usage
     ./server: will start the server on port 12045. No arguements required.
+    
     To shutdown the server:
       Enter 2 while it is running:
       You will be prompted to do a hard or soft shutdown.
@@ -30,12 +30,12 @@ Usage:
         filepath: the path to the file to be sent to the server
         buffersize: the size of each message containing part the file
 
-limitations:
+## Known limitations
     - The buffer length is capped at 20000 bytes and must be at least 1 byte
     - The file must not be empty
     - The server does not accept multiple active transfers with duplicate file names.
 
-script: 
+## Testing
     We used wonderland.txt and duplicated the file with incrementing file names and 
     used those to send multiple client requests from the runMultiClient.sh script.
 
